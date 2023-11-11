@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Generator in Python</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="title">
+    <h1> Type the link to generate QR Code of website</h1>
+</div>
+<form action="/" method= "POST">
+    <input type="text" name="link">
+    <button type="submit">Click Here</button>
+</form>
+<div class="generated">
+<img src="{{data}}">
+    </div>
+</body>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+
+    html,body
+    {
+    margin: 0 10rem;
+    font-family:Poppins,'sans-serif';}
+
+    .title{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    }
+
+form input{
+    width:50%;
+      padding: 0.5rem 1rem;
+      font-size:1.4rem;
+      font-family:Poppins,'sans-serif';
+      background:rgb(33,22,42);
+      color:white;
+    }
+
+    form button{
+    border:none;
+    border-radius:0.5rem;
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+
+    }
+</style>
+</html>
